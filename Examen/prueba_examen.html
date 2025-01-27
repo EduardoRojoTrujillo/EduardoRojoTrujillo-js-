@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre , total , aciertos;
+        nombre=prompt("Ingrese su nombre:");
+        let resultado
+        function Comprobacion(){
+            total=parseInt(prompt("Ingrese el total de preguntas del test:"));
+            //while(total<=0 || total>=101){
+                //alert("El numero ingresado tiene que ser entre el 1 y el 100");
+                //total=parseInt(prompt("Ingrese el total de preguntas del test"));
+            //}   
+            aciertos=parseInt(prompt("Ingrese el total de preguntas que ha acertado:"));
+    }
+    let porcentaje = (aciertos/total)*100;
+        function mostrarPorcentaje(result){
+        if(porcentaje>=90){
+            result=("Nivel superior");
+        }
+        else{
+            if(porcentaje>=75){
+                result=("Nivel medio");
+            }
+            else{
+                if(porcentaje>=50){
+                    result=("Nivel regular");
+                }
+                else{
+                    result=("Fuera nivel");
+                }
+            }
+        }
+        return result
+    }
+    let comprobacion=Comprobacion();
+    document.write(comprobacion);   
+    let resultadototal=mostrarPorcentaje(resultado);
+    document.write(resultadototal);    
+    </script>
+</body>
+</html>

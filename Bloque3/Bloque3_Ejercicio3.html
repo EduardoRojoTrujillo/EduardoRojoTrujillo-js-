@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 20px 40px;
+            margin-bottom: 3rem;
+            font-size: 5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 5px 5px 5px gray;
+        }
+        input:hover {
+            background-color: #6190c2;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="button" value="España" onclick="comprobarBoton1()">
+        <input type="button" value="Peru" onclick="comprobarBoton2()">
+        <input type="button" value="Colombia" onclick="comprobarBoton3()">
+    </form>
+    <script src="B3_3.js"></script>
+</body>
+</html>

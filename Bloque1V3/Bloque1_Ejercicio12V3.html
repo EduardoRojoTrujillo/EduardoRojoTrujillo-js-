@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function MostrarDigitos(number)
+{
+        if (number<10) 
+        {
+            return 'El numero tiene un dígito'
+        } 
+        else 
+        {
+            if (number<100) 
+            {
+                return 'El numero tiene dos dígitos'
+            } 
+            else 
+            {
+                return 'El numero tiene tres dígitos'
+            }
+        }
+}
+numero=parseInt(prompt("Ingrese numeros de 1, 2 o 3 digitos"));
+let resultado=MostrarDigitos(numero)
+document.write(resultado)
+    </script>
+</body>
+</html>

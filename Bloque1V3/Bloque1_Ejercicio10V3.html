@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        numero=parseInt(prompt("Ingrese un valor comprendido entre el 1 y el 99"));
+        function MostrarValor(number)
+{
+        if (number<10)
+    {
+        return "El valor introducido tiene un digito"
+    }
+    else 
+    {
+        return "El valor introducido tiene dos digitos"
+    }
+}
+let resultado=MostrarValor(numero)
+document.write(resultado);
+    </script>
+</body>
+</html>

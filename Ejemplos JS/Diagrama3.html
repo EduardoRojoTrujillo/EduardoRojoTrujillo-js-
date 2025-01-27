@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Notas</title>
+</head>
+<body>
+    <script>
+        var nota, sumarNotas, contadorNotas, media;
+        sumarNotas = 0;
+        contadorNotas = 0;
+
+        do 
+        {
+            nota = prompt("Introduzca sus notas con números entre 1 y 10. Para finalizar y saber su promedio, ponga 0.");
+            nota = parseInt(nota);
+
+            if (nota > 0 && nota <= 10) { // Verificar que la nota esté en el rango permitido
+                contadorNotas++;
+                sumarNotas += nota;
+            } else if (nota < 0) {
+                alert("Por favor, introduzca una nota válida entre 1 y 10.");
+            }
+        } 
+        while (nota !== 0);
+
+        if (contadorNotas > 0) 
+        {
+            media = sumarNotas / contadorNotas;
+            document.write("El promedio de las notas es: " + media);
+        } else 
+        {
+            document.write("No se han introducido notas válidas.");
+        }
+    </script>
+</body>
+</html>

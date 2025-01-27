@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function MostrarSueldoAntiguedad(salary, antiquity, salarytotal)
+    {
+        if (salary<500 && antiquity>=10) {
+            return 'Se le otorga un aumento del 20%'
+           return '<br>'
+            return 'El sueldo total es: '+salarytotal
+        } 
+        else 
+        {
+            if (salary<500 && antiquity<10) 
+            {
+                return 'Se le otorga un aumento del 5%'
+                return '<br>'
+                let sueldototal=sueldo+sueldo*0.05;
+                return 'El sueldo total es: '+salarytotal
+            } 
+            else 
+            {
+                return 'El sueldo queda sin cambios:'+salary
+            }
+        }
+    }
+    let sueldo, antiguedad;
+        sueldo = parseInt(prompt('Ingrese el sueldo del empleado'));
+        antiguedad = parseInt(prompt('Ingrese la antigüedad del empleado'));
+    let sueldototal = sueldo+sueldo*0.20;
+    let resultado=MostrarSueldoAntiguedad(sueldo, antiguedad, sueldototal)
+    document.write(resultado);
+    </script>
+</body>
+</html>

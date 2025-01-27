@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declaramos e inicacializamos variables
+        var horaEntrada , horaSalida , cuota , tiempoAparcado;
+        horaEntrada=0;
+        horaSalida=0;
+        cuota=10;
+        tiempoAparcado=0;
+        horaEntrada=prompt("Introduce hora entrada (24h)");
+        horaEntrada=parseInt(horaEntrada);
+        //usamos el metodo prompt para recoger información
+        horaSalida=prompt("Introduce la hora de salida (24h)");
+        //usamos el metodo parseInt para transformar texto en un numero
+        horaSalida=parseInt(horaSalida);
+        //usamos el metodo write del objeto document
+        document.write("La hora de entrada es: "+horaEntrada+"<br>");
+        document.write("La hora de salida es: "+horaSalida+"<br>");
+        tiempoAparcado=horaSalida-horaEntrada;
+        tiempoAparcado=parseInt(tiempoAparcado);
+        document.write("Has estado aparcado por " +tiempoAparcado+" horas"+"<br>");
+        if (tiempoAparcado>=1)
+        (
+            cuota=cuota+tiempoAparcado*5
+        )
+        document.write("La cuota a pagar es: "+cuota+" Euros");
+        //document.write(horaEntrada);
+    </script>   
+</body>
+</html>

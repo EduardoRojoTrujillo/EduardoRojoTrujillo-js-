@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names;
+        names=new Array(5);
+        function cargarNombres(lista){
+            for(let f=0 ; f<names.length ; f++){
+            let v=prompt("Introduce nombres:");
+            names[f]=[v];
+        }return lista
+        }
+        function crearNuevalista(lista2){
+            for(let f=0 ; f<names.length ; f++){
+            lista2= lista2 + names[f];
+        }return lista2
+            }
+        function imprimirlista(lista){
+            document.write("Listado de los nombres que has introducido:<br>");
+            for(let f=0 ; f<names.length ; f++){
+            document.write(names[f]+"<br>","<br>");
+        }return lista
+    }
+        cargarNombres(names);
+        crearNuevalista(names);
+        imprimirlista(names);
+    </script>
+</body>
+</html>
